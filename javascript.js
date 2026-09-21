@@ -17,11 +17,8 @@ for (let i = 2; i < Object.keys(data.sprites).length; i++) {
 }
 
 for (let i = 0; i < data.stats.length; i++) {
-    if (data.stats[i].stat.name === "attack") {
-     document.getElementById ("attack")
-    .innerHTML = "attack" + data.stats[i].base_stat
-
-    }
+    document.getElementById("stats2").innerHTML =
+        data.stats[i].stat.name + ": " + data.stats[i].base_stat;
 }
 function next() {
     if (i == 7) return
