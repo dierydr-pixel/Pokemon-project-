@@ -1,19 +1,42 @@
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     min-height: 100vh;
+    background-color: red;
 }
 
 .buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
 }
 
 button {
     width: 100px;
     height: 50px;
-    background-color: aqua;
+    background-color: yellow;
     border-radius: 10px;
+}
+
+img {
+    width: 10rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 3rem;
+    margin-left: 10rem;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    background-color: black;
+    color: white;
+    width: 50rem;
+    height: 25rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    align-items: center;
+
 }
