@@ -1,22 +1,36 @@
 <!doctype html>
 <html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./javascript.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./javascript.js" defer></script>
   </head>
+
   <body>
+    <div class="pokemon-search">
+      <label for="pokemon-search">Search Pokemon:</label>
+
+      <div class="search-controls">
+        <input
+          type="search"
+          id="pokemon-search"
+          placeholder="Name or number of Pokemon"
+        />
+        <button type="button" id="search-button">Search</button>
+      </div>
+    </div>
+
     <h1>Pokemon</h1>
-    
-    <img src="" id="pikachu_profile" />
-  <div class="buttons">
-    <button id = "Previous">Previous</button>
-    <button id = "Next">Next</button>
-  </div>
-  
-  <div 
-  class="stats" id="stats2">
-  </div>
+
+    <img src="" id="pikachu_profile" alt="Imagen del Pokémon" />
+
+    <div class="buttons">
+      <button id="Previous">Previous</button>
+      <button id="Next">Next</button>
+    </div>
+
+    <div class="stats" id="stats2"></div>
   </body>
 </html>

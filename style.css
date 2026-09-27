@@ -1,42 +1,100 @@
 body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: 100vh;
-    background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100vh;
+  background-color: red;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-button {
-    width: 100px;
-    height: 50px;
-    background-color: yellow;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 img {
-    width: 10rem;
-    height: 15rem;
-    background-color: white;
-    border-radius: 3rem;
-    margin-left: 10rem;
+  width: 10rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 3rem;
+  margin-left: 10rem;
 }
 
 .stats {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
-    background-color: black;
-    color: white;
-    width: 50rem;
-    height: 25rem;
-    border: 2px solid white;
-    border-radius: 2rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  background-color: black;
+  color: white;
+  width: 50rem;
+  height: 25rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  align-items: center;
+}
+.pokemon-search {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  width: 360px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  z-index: 100;
+}
 
+.pokemon-search label {
+  display: block;
+  margin-bottom: 12px;
+  color: #292516;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-controls {
+  display: flex;
+  gap: 10px;
+}
+
+#pokemon-search {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 2px solid #b8ad89;
+  border-radius: 10px;
+  background: white;
+  color: #292516;
+  font: inherit;
+}
+
+#pokemon-search::placeholder {
+  color: #6b6657;
+}
+
+button {
+  padding: 12px 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: #facc15;
+  color: #292516;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background: #eab308;
+}
+
+#pokemon-search:focus-visible,
+#search-button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+@media (max-width: 420px) {
+  .search-controls {
+    flex-direction: column;
+  }
 }
